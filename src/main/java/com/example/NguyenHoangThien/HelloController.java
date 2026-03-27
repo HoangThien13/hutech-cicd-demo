@@ -1,12 +1,12 @@
 package com.example.NguyenHoangThien;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class HelloController {
     @GetMapping("/")
     public String index() {
-        return "Chào Thiện! App Spring Boot đã chạy thành công trong Docker rồi nhé!";
+        return "index"; // Trả về tên file index.html trong thư mục templates
     }
 }
